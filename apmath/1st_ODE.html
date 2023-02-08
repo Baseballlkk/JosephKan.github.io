@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Order ODE</title>
+    
+    <link rel="stylesheet" href="/lib/w3.css">
+	<link rel="stylesheet" href="../lib/w3-theme-black.css">
+	<link rel="stylesheet" href="../../fonts.googleapis.com/css-family=Roboto.html">
+	<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height:30px;
+        }
+
+        h1 {
+            text-align:center;
+        }
+        
+        img {
+            width:30%;
+        }
+    </style>
+
+    <script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <h1>linear or not</h1>
+    <p>if the ODEs can be written in $$a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+...+a_2(x)y''+a_1(x)y'+a_0(x)y=R(x)$$</p>
+    <p>then the ODEs are called to be linear equation.</p>
+    
+    <hr>
+
+    <h1>Types of Solutions</h1>
+    <h2>General Solution</h2>
+    <p>The solutions can fit in all the situation of the ODE.</p>
+    <h2>Particular Solution</h2>
+    <p>Particular solution can only fit in the ODE that R(x) is given.</p>
+
+    <hr>
+
+    <h1>Ways to Solve ODEs</h1>
+    <h2>Sparation of Variable</h2>
+    <p>$$f(x)dx=g(y)dy$$</p>
+    <p>$$\Rightarrow \int f(x) dx=\int g(y) dy +C$$</p>
+
+    <h2>Exact Differential Equaiton</h2>
+    <p>if an ODE can be written in :$$M(x,y) dx+N(x,y)dy=0$$</p>
+    <p>and the <span style="color:blue;">$$M(x,y)=\frac{\partial \Phi}{\partial x} $$<br>$$ N(x,y)=\frac{\partial \Phi}{\partial y}$$</span></p>
+    <p>then the solution is:<span style="color:red;">$$\Phi = \int M(x,y) dx+k(y) = \int N(x,y) dy+k(x)=c$$</span></p>
+
+    <h2>1st order ODEs</h2>
+    <p>if the ODE is $$y'+P(x)y=Q(x)$$</p>
+    <p>suppose$$I=e^{\int P(x)dx}$$</p>
+    <p>then $$I(y'+P(x)y)=Q(x)\cdot I$$</p>
+    <p>$$\Rightarrow (I\cdot y)'=Q(x)\cdot I$$</p>
+    <p>$$\Rightarrow y=I^{-1}\int Q(x)\cdot I dx$$</p>
+
+    <h2>Bernoullis Equation</h2>
+    <p>a Bernoullis equaiton must written: $$y'+P(x)y=Q(x)y^{\alpha}$$</p>
+    <p>suppose $$u=y^{1-\alpha}$$ to solve the equation.</p>
+</body>
+</html>
